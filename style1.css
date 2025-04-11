@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Modern Page</title>
+  <style>
+    :root {
+      --gold: #F0E68C;
+      --black: #000;
+      --white: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: var(--white);
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--black);
+      color: var(--white);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background: var(--gold);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 1rem;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Modern Responsive Page</h1>
+    <nav>
+      <a href="South Africa">Home</a>
+      <a href="Creating code">About</a>
+      <a href="Wed development">Projects</a>
+      <a href="0640080099">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>Section 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat elit nec justo fermentum, at lacinia leo euismod.</p>
+    </div>
+    <div class="card">
+      <h2>Section 2</h2>
+      <p>Curabitur at ante nec turpis fermentum malesuada. Integer ut orci at magna ultrices malesuada.</p>
+    </div>
+    <div class="card">
+      <h2>Section </h2>
+      <p>Maecenas scelerisque diam a velit malesuada, nec vestibulum sapien malesuada.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Wisani Chake. All rights reserved.
+  </footer>
+
+</body>
+</html>
